@@ -141,7 +141,7 @@ jobs:
     name: Build and Push ${{ matrix.image }}
     runs-on: ubuntu-latest
 
-    # All backend tests must pass before this job starts
+  # All backend and frontend tests must pass before this job starts
     needs:
       - backend-test
       - frontend-test
